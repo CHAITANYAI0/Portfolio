@@ -1,1 +1,1 @@
-This repository consists code for Portfolio- https://pawarpa.github.io/pawarpa.github.io./
+This repository consists code for Portfolio- https://chaitanyai0.github.io/Portfolio/
