@@ -4,8 +4,70 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+<style>
+	/* Container for the resume options */
+	.resume-container {
+	  position: relative;
+	  display: inline-block;
+	}
+  
+	/* Smaller hover box */
+	.resume-options {
+	  display: none;
+	  position: absolute;
+	  background-color: #f9f9f9;
+	  padding: 5px;
+	  border-radius: 6px;
+	  border: 1px solid #ddd;
+	  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+	  z-index: 1;
+	  margin-top: 6px;
+	  width: 100px; /* Reduced width for a smaller box */
+	}
+  
+	/* Show the options when hovering */
+	.resume-container:hover .resume-options {
+	  display: block;
+	}
+  
+	/* Style for the links */
+	.resume-options a {
+	  color: #333;
+	  font-weight: bold;
+	  font-family: Arial, sans-serif;
+	  font-size: 12px; /* Smaller font size */
+	  text-decoration: none;
+	  padding: 2px 0;
+	  display: block;
+	  transition: color 0.3s ease, background-color 0.3s ease;
+	}
+  
+	/* Hover effect for the links */
+	.resume-options a:hover {
+	  color: #fff;
+	  background-color: #007bff;
+	  border-radius: 4px;
+	  padding: 4px 8px; /* Adjusted padding for a more compact feel */
+	}
+  
+	/* Subtle animation for the dropdown */
+	.resume-options {
+	  opacity: 0;
+	  transform: translateY(8px);
+	  transition: all 0.3s ease;
+	}
+  
+	.resume-container:hover .resume-options {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+
+	
+  </style>
+  
 <html>
 	<head>
+		
 		<title>Chaitanya Inamdar</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -24,6 +86,13 @@
 								<li><a href="https://www.linkedin.com/in/chaitanya-inamdar98/" target="_blank" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
 								<li><a href="https://github.com/CHAITANYAI0/" target="_blank" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
 								<li><a href="https://public.tableau.com/app/profile/chaitanya.inamdar/vizzes" target="_blank" class="icon solid fa-chart-line alt"><span class="label">Tableau</span></a></li>
+								<li class="resume-container">
+									<a href="#" class="icon solid fa-file-pdf alt"><span class="label">Resume</span></a>
+									<div class="resume-options">
+									  <a href="https://drive.google.com/file/d/1Hy8gzZyu0CYrgYHOpjgAqTrjqWu_aJY6/view?usp=drive_link" target="_blank">View</a>
+									  <a href="https://drive.google.com/uc?export=download&id=1Hy8gzZyu0CYrgYHOpjgAqTrjqWu_aJY6" download>Download</a>
+									</div>
+								  </li>
 							</ul>
 						</p>
 					</header>
@@ -46,14 +115,18 @@
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
+																						
+											
 											<h2>Who Am I ?</h2>
+
 										</header>
 										<p>
 											As a recent graduate from <strong>Northeastern University</strong> with a <strong>Master of Science in Information Systems focused on Data Science</strong>, I have honed my skills in database management, business intelligence, machine learning and data engineering. My academic journey, coupled with hands-on project experience, has fueled my passion for leveraging data-driven insights to drive informed decision-making and solve complex business problems.
 											<br><br>
 											As a data scientist with diverse experience in machine learning, data analysis, and visualization, I have honed my expertise in transforming complex datasets into actionable insights. My background includes proficiency in Python, R, SQL, and cloud technologies such as AWS and Google Cloud Platform. My professional journey has equipped me with a deep understanding of predictive modeling, data management, and data visualization. I am passionate about leveraging these skills to solve intricate business problems and drive strategic decision-making.										</p>
 									</div>
-									<span class="image"><img src="images/Profile.JPG" alt="Profile Photo" /></span>
+									<span class="image"><img src="images/profile.png" alt="Profile Photo" /></span>
+
 								</div>
 							</section>
 
@@ -81,7 +154,7 @@
 											</div>
 
 												<div class="work">
-												<h3><strong>Uber ETL GCP-MAGE-SQL-Looker Data Engineering/strong></h3>	
+												<h3><strong>Uber ETL GCP-MAGE-SQL-Looker Data Engineering</strong></h3>	
 												<p>Lets implement data analytics on Uber data using various tools and technologies, including GCP Storage, Python, Compute Instance, Mage Data Pipeline Tool, BigQuery, and Looker Studio.
 												</p>
 												<img src="images\architecture.jpg" alt="GCP-MAGE-SQL-Looker project">
@@ -90,9 +163,10 @@
 												</div>
 											</div>
 											</div>
+											<div class="work-list">
 
 												<div class="work">
-												<h3><strong>Retail Sales Analysis Dashboard Tableau/strong></h3>	
+												<h3><strong>Retail Sales Analysis Dashboard Tableau</strong></h3>	
 												<p>This project provides a Sales Dashboard and a Customer Dashboard designed to offer key insights into sales metrics, customer trends, and product performance. Built using Tableau, the dashboards are interactive, allowing users to filter data based on various parameters such as product category, subcategory, region, and year.
 												</p>
 												<img src="images\Sales Dashboard.png" alt="Retail Sales Analysis Dashboard Tableau">
@@ -100,61 +174,61 @@
 													<a href="https://github.com/CHAITANYAI0/Retail-Sales-Analysis-Dashboard-TABLEAU" target="_blank"><i class="icon brands fa-github"></i></a>
 												</div>
 											</div>
-											
-											
+										</div>
 										</div>
 									</div>
 								</div>		
 							</section>
-				
+							<br>
+							<br>
 						<!-- Experience -->
-							<section id="experience" class="main special">
-								<header class="major">
-									<h2>Where I’ve Worked ?</h2>
-								</header>
-								<ul class="statistics">
-									<li class="style1">
-										<strong><i>Data Scientist</i></strong>
-										<hr>
-										Linus Health
-										<br>
-										<br> 
-										Boston, MA
-										<br>
-										June'23 – Dec'23
-									</li>
-									<li class="style2">
-										<strong><i>Data Scientist</i></strong>
-										<hr>
-										Accenture
-										<br>
-										<br>
-										Mumbai, India
-										<br>
-										Aug'21 – Aug'22
-									</li>
-									<li class="style3">
-										<strong><i>Data Scientist</i></strong>
-										<hr>
-										ZA Associates
-										<br>
-										<br>
-										Pune, India
-										<br>
-										Jun'20 – Aug'21
-									</li>
-									<li class="style4">
-										<strong><i>Data Scientist</i></strong>
-										<hr>
-										Virtusa
-										<br> 
-										<br>
-										Chennai, India
-										<br>
-										May'19 - Jun'22
-									</li>
-								</ul>
-							</section>
+						<section id="experience" class="main special">
+							<header class="major">
+								<h2>Where I’ve Worked ?</h2>
+							</header>
+							<ul class="statistics">
+								<li class="style1">
+									<strong><i>Data Scientist</i></strong>
+									<hr>
+									<img src="images\linus.png" alt="Linus Health Logo" style="width:100px;height:50px;">
+									<br>Linus Health
+									<br><br> 
+									Boston, MA
+									<br>
+									June '23 – Dec '23
+								</li>
+								<li class="style2">
+									<strong><i>Data Scientist</i></strong>
+									<hr>
+									<img src="images\accenture.png" alt="Accenture Logo" style="width:100px;height:50px;">
+									<br>Accenture
+									<br><br>
+									Mumbai, India
+									<br>
+									Aug '21 – Aug '22
+								</li>
+								<li class="style3">
+									<strong><i>Data Scientist</i></strong>
+									<hr>
+									<img src="images\ZS_logo.png" alt="ZA Associates Logo" style="width:100px;height:50px;">
+									<br>ZS
+									<br><br>
+									Pune, India
+									<br>
+									Jun '20 – Aug '21
+								</li>
+								<li class="style4">
+									<strong><i>Data Scientist</i></strong>
+									<hr>
+									<img src="images\virtusa.png" alt="Virtusa Logo" style="width:100px;height:50px;">
+									<br>Virtusa
+									<br><br>
+									Chennai, India
+									<br>
+									May '19 – Jun '22
+								</li>
+							</ul>
+						</section>
 						<!-- Skills -->
 						<section id="skills" class="main special">
 							<header class="major">
@@ -199,32 +273,38 @@
 						<!-- Education -->
 						<section id="education" class="main special">
 							<header class="major">
-								<h2>What I’ve Studied ?</h2>
+							  <h2>What I’ve Studied?</h2>
 							</header>
 							<ul class="statistics">
-								<li class="style2">
-									<strong><i>Master of Science in Information Systems</i></strong>
-									<hr>
-									<h3>Northeastern University</h3>
-									<br> 
-									Boston, MA
-									<br>
-									Sep'22 - Dec'24
-								</li>
-								<li class="style4">
-									<strong><i>Bachelor of Technology in Computer Science Engineering</i></strong>
-									<hr>
-									<h3>Vellore Institute of Technology</h3>
-									<br>
-									Vellore, India
-									<br>
-									May'15 – May'19
-									<br>
-									<img src="images\VIT_Graduation_Photo.jpg" alt="Graduation Photo" style="width: 300px; height: auto; margin-top: 10px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); border: 2px solid #ccc;">
-								</li>
+							  <li class="style2">
+								<strong><i>Master of Science in Information Systems</i></strong>
+								<hr>
+								<h3>Northeastern University</h3>
+								<img src="images\NEU.png" alt="NEU Logo" style="width:200px;height:100px;">
+								<br>
+								Boston, MA
+								<br>
+								Sep'22 - Dec'24
+								<br><br>
+								<h2>Relevant Courses:</h2> Data Science Methods and Tools, Advanced Database Management Systems, Database Management, and Database Design.
+							  </li>
+							  <li class="style4">
+								<strong><i>Bachelor of Technology in Computer Science Engineering</i></strong>
+								<hr>
+								<h3>Vellore Institute of Technology</h3>
+								<img src="images\VIT.png" alt="VIT Logo" style="width:200px;height:100px;">
+								<br>
+								Vellore, India
+								<br>
+								May'15 – May'19
+								<br><br>
+								<h2>Relevant Courses:</h2> Data Science Methods and Tools, Advanced Database Management Systems, Database Management, and Database Design.<br><br><br>
+								<img src="images\VIT_Graduation_Photo.jpg" alt="Graduation Photo" style="width: 300px; height: auto; margin-top: 10px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); border: 2px solid #ccc;">
+							  </li>
 							</ul>
-						</section>
-					</div>
+						  </section>
+						  
+						  
 
 				<!-- Footer -->
 					<footer id="footer">

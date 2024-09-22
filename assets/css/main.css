@@ -3072,14 +3072,15 @@ input, select, textarea {
 			display: inline-block;
 			margin-left: 4em;
 			padding: 0.65em;
-			border-radius: 100%;
-			border: solid 1px;
+			border-radius: 0%;
+			border: solid 0px;
 		}
 
 			.spotlight .image img {
 				display: block;
 				border-radius: 100%;
 				width: 16em;
+				
 			}
 
 		@media screen and (max-width: 980px) {
@@ -3131,7 +3132,7 @@ input, select, textarea {
 			}
 
 				.spotlight .image img {
-					width: 12em;
+					width: em;
 				}
 
 		}
@@ -3854,3 +3855,22 @@ input, select, textarea {
 			}
 
 		}
+
+
+	.profile-picture {
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+			border: 10px solid #8A2BE2; /* Purple color */
+			padding: 5px; /* Adjust the padding if needed */
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		  }
+		  
+	.profile-picture img {
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+		  }
+			  
