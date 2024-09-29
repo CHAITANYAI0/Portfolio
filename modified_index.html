@@ -1,0 +1,398 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<style>
+	/* Container for the resume options */
+	.resume-container {
+	  position: relative;
+	  display: inline-block;
+	}
+  
+	/* Smaller hover box */
+	.resume-options {
+	  display: none;
+	  position: absolute;
+	  background-color: #f9f9f9;
+	  padding: 5px;
+	  border-radius: 6px;
+	  border: 1px solid #ddd;
+	  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+	  z-index: 1;
+	  margin-top: 6px;
+	  width: 100px; /* Reduced width for a smaller box */
+	}
+  
+	/* Show the options when hovering */
+	.resume-container:hover .resume-options {
+	  display: block;
+	}
+  
+	/* Style for the links */
+	.resume-options a {
+	  color: #333;
+	  font-weight: bold;
+	  font-family: Arial, sans-serif;
+	  font-size: 12px; /* Smaller font size */
+	  text-decoration: none;
+	  padding: 2px 0;
+	  display: block;
+	  transition: color 0.3s ease, background-color 0.3s ease;
+	}
+  
+	/* Hover effect for the links */
+	.resume-options a:hover {
+	  color: #fff;
+	  background-color: #007bff;
+	  border-radius: 4px;
+	  padding: 4px 8px; /* Adjusted padding for a more compact feel */
+	}
+  
+	/* Subtle animation for the dropdown */
+	.resume-options {
+	  opacity: 0;
+	  transform: translateY(8px);
+	  transition: all 0.3s ease;
+	}
+  
+	.resume-container:hover .resume-options {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+
+	
+  </style>
+  
+<html>
+	<head>
+		
+		<title>Chaitanya Inamdar</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1>Hi! I’m Chaitanya Inamdar </h1>
+						<p>Data Science & Engineering |  Business Intelligence |  Machine Learning<br/>
+							<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/chaitanya-inamdar98/" target="_blank" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/CHAITANYAI0/" target="_blank" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="https://public.tableau.com/app/profile/chaitanya.inamdar/vizzes" target="_blank" class="icon solid fa-chart-line alt"><span class="label">Tableau</span></a></li>
+								<li class="resume-container">
+									<a href="#" class="icon solid fa-file-pdf alt"><span class="label">Resume</span></a>
+									<div class="resume-options">
+									  <a href="https://drive.google.com/file/d/1Hy8gzZyu0CYrgYHOpjgAqTrjqWu_aJY6/view?usp=drive_link" target="_blank">View</a>
+									  <a href="https://drive.google.com/uc?export=download&id=1Hy8gzZyu0CYrgYHOpjgAqTrjqWu_aJY6" download>Download</a>
+									</div>
+								  </li>
+							</ul>
+						</p>
+					</header>
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">About Me</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#experience">Experience</a></li>
+							<li><a href="#skills">Skills</a></li>
+							<li><a href="#education">Education</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+																						
+											
+											<h2>Who Am I ?</h2>
+
+										</header>
+										<p>
+											As a recent graduate from <strong>Northeastern University</strong> with a <strong>Master of Science in Information Systems focused on Data Science</strong>, I have honed my skills in database management, business intelligence, machine learning and data engineering. My academic journey, coupled with hands-on project experience, has fueled my passion for leveraging data-driven insights to drive informed decision-making and solve complex business problems.
+											<br><br>
+											As a data scientist with diverse experience in machine learning, data analysis, and visualization, I have honed my expertise in transforming complex datasets into actionable insights. My background includes proficiency in Python, R, SQL, and cloud technologies such as AWS and Google Cloud Platform. My professional journey has equipped me with a deep understanding of predictive modeling, data management, and data visualization. I am passionate about leveraging these skills to solve intricate business problems and drive strategic decision-making.										</p>
+									</div>
+									<span class="image"><img src="images/profile.png" alt="Profile Photo" /></span>
+
+								</div>
+							</section>
+
+						<!-- Buttons to filter projects -->
+
+
+<!-- Projects -->
+<section id="projects" class="main special">
+    <div class="spotlight">
+        <div class="content">
+            <header class="major">
+                <h2>Check out my Projects </h2>
+            </header>
+
+			<div id="filter-buttons">
+				<button class="filter-btn" onclick="filterProjects('all')">All</button>
+				<button class="filter-btn" onclick="filterProjects('data-analysis')">Data Analyis</button>
+				<button class="filter-btn" onclick="filterProjects('data-engineering')">Data Engineering</button>
+				<button class="filter-btn" onclick="filterProjects('ml')">ML</button>
+			</div>
+        </div>
+    </div>
+    <div id ="portfolio">
+        <div class="container"> 
+            <div class="work-list">
+                <div class="work" data-category="ml">
+                    <h3><strong>MLFLOW-DVC-AWS-Kidney Disease Classification</strong></h3>    
+                    <p  style="font-size: 18px;">End to end Deep learning project on Kidney Disease Classification with MLFLOW, DVC, and AWS.</p>
+                    <img src="images/kidney-MLflow-image.png" alt="MLFLOW-DVC-AWS project">
+                    <div class="layer">
+                        <a href="https://github.com/CHAITANYAI0/Kideny-Disease-Classification-Deep-Learning-Project-DS" target="_blank"><i class="icon brands fa-github"></i></a>
+                    </div>
+                </div>
+
+				<div class="work" data-category="ml">
+					<h3><strong>Image Caption Generation: CNN + LSTM vs ResNet + GRU</strong></h3>	
+					<p  style="font-size: 18px;">This project compares two approaches for image caption generation using deep learning models: CNN + LSTM and ResNet + GRU. The models were trained and evaluated on the Flicker 8K dataset to generate captions for images.
+					</p>
+					<img src="images\Image_Captioning.png" alt="Image Caption Generation: CNN + LSTM vs ResNet + GRU">
+					<div class="layer">
+						<a href="https://github.com/CHAITANYAI0/Image-Captioning-with-CNN-LSTM-and-ResNet-GRU-Flickr8k" target="_blank"><i class="icon brands fa-github"></i></a>
+					</div>
+				</div>
+
+				<div class="work" data-category="ml">
+					<h3><strong>Content Based Movie Recommendation System with Heroku Deployment</strong></h3>	
+					<p  style="font-size: 18px;">The Movie Recommender System is a web application built with Python and Streamlit that suggests movies based on user preferences using collaborative and content-based filtering techniques. It's ideal for those looking to build and deploy recommendation systems with a user-friendly interface.
+					</p>
+					<img src="images/Movie_Rec_sys.jpg" alt="Content Based Movie Recommendation System with Heroku Deployment">
+					<div class="layer">
+						<a href="https://github.com/CHAITANYAI0/Content-Based-Movie-Recommendation-System-with-Heroku-Deployment" target="_blank"><i class="icon brands fa-github"></i></a>
+					</div>
+				</div>
+
+			
+
+                <div class="work" data-category="data-engineering">
+                    <h3><strong>Uber ETL GCP-MAGE-SQL-Looker Data Engineering</strong></h3>    
+                    <p  style="font-size: 18px;">Data analytics on Uber data using various tools like GCP Storage, Python, Compute Instance, Mage Data Pipeline Tool, BigQuery, and Looker Studio.</p>
+                    <img src="images/architecture.jpg" alt="GCP-MAGE-SQL-Looker project">
+                    <div class="layer">
+                        <a href="https://github.com/CHAITANYAI0/Uber-ETL-Data-Engineering-Project" target="_blank"><i class="icon brands fa-github"></i></a>
+                    </div>
+                </div>
+
+				<div class="work"  data-category="data-engineering">
+					<h3><strong>App Store Relational Database Management System SQL</strong></h3>	
+					<p  style="font-size: 18px;">The App Store Management System streamlines app management across multiple platforms, allowing users to install, update, and review apps by genre. It also enables companies to launch apps and collect user feedback efficiently.
+					</p>
+					<img src="images\ER.png" alt="ERD Diagram" height="500px">
+					<div class="layer">
+						<a href="https://github.com/CHAITANYAI0/App-Store-Relational-Database-Management-System-SQL" target="_blank"><i class="icon brands fa-github"></i></a>
+					</div>
+				</div>
+
+                <div class="work" data-category="data-analysis">
+                    <h3><strong>Retail Sales Analysis Dashboard Tableau</strong></h3>    
+                    <p  style="font-size: 18px;">Interactive Sales and Customer Dashboards built with Tableau, offering insights into sales metrics, customer trends, and product performance.</p>
+                    <img src="images/Sales Dashboard.png" alt="Retail Sales Analysis Dashboard Tableau">
+                    <div class="layer">
+                        <a href="https://github.com/CHAITANYAI0/Retail-Sales-Analysis-Dashboard-TABLEAU" target="_blank"><i class="icon brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Add other projects similarly with appropriate data-category attributes -->
+            </div>
+        </div>
+    </div>     
+</section>
+<br>
+<br>
+<!-- Script to filter projects -->
+<script>
+function filterProjects(category) {
+    var projects = document.querySelectorAll('.work');
+    projects.forEach(function(project) {
+        if (category === 'all') {
+            project.style.display = 'block'; // Show all projects
+        } else if (project.getAttribute('data-category') === category) {
+            project.style.display = 'block'; // Show projects that match the category
+        } else {
+            project.style.display = 'none'; // Hide projects that don't match
+        }
+    });
+}
+</script>
+
+					
+							
+							<br>
+							<br>
+						<!-- Experience -->
+						<section id="experience" class="main special">
+							<header class="major">
+								<h2>Where I’ve Worked ?</h2>
+							</header>
+							<ul class="statistics">
+								<li class="style1">
+									<strong><i>Data Scientist</i></strong>
+									<hr>
+									<img src="images\linus.png" alt="Linus Health Logo" style="width:100px;height:50px;">
+									<br>Linus Health
+									<br><br> 
+									Boston, MA
+									<br>
+									June '23 – Dec '23
+								</li>
+								<li class="style2">
+									<strong><i>Data Scientist</i></strong>
+									<hr>
+									<img src="images\accenture.png" alt="Accenture Logo" style="width:100px;height:50px;">
+									<br>Accenture
+									<br><br>
+									Mumbai, India
+									<br>
+									Aug '21 – Aug '22
+								</li>
+								<li class="style3">
+									<strong><i>Data Scientist</i></strong>
+									<hr>
+									<img src="images\ZS_logo.png" alt="ZA Associates Logo" style="width:100px;height:50px;">
+									<br>ZS
+									<br><br>
+									Pune, India
+									<br>
+									Jun '20 – Aug '21
+								</li>
+								<li class="style4">
+									<strong><i>Data Scientist</i></strong>
+									<hr>
+									<img src="images\virtusa.png" alt="Virtusa Logo" style="width:100px;height:50px;">
+									<br>Virtusa
+									<br><br>
+									Chennai, India
+									<br>
+									May '19 – Jun '22
+								</li>
+							</ul>
+						</section>
+						<!-- Skills -->
+						<section id="skills" class="main special">
+							<header class="major">
+								<h2>What I Bring To The Table ?</h2>
+							</header>
+							<ul class="features">
+								<li>
+								    <span class="icon solid fa-code"></span>
+								    <h4><strong>Programming Languages</strong></h4>
+								    <p>Python, R, JavaScript, Java</p>
+								</li>
+								<li>
+								    <span class="icon solid fa-chart-bar"></span>
+								    <h4><strong>ML Libraries</strong></h4>
+								    <p>NumPy, Pandas, Scikit-learn, Seaborn, Matplotlib, Keras, PyTorch, TensorFlow, Spark, SpaCy</p>
+								</li>
+								<li>
+								    <span class="icon solid fa-database"></span>
+								    <h4><strong>ML Algorithms</strong></h4>
+								    <p>Logistic and Linear Regression, Random Forest, Support Vector Machine, CNN, RNN, LSTM, NLP</p>
+								</li>
+								<li>
+								    <span class="icon solid fa-exchange-alt"></span>
+								    <h4><strong>Data Management</strong></h4>
+								    <p>SQL, Google Big Query, MS Azure Data Studio, AWS Redshift, Snowflake, MS Excel</p>
+								</li>
+								<li>
+								    <span class="icon solid fa-cloud"></span>
+								    <h4><strong>Data Visualizations</strong></h4>
+								    <p>Tableau, Power BI, Looker</p>
+								</li>
+								<li>
+								    <span class="icon solid fa-key"></span>
+								    <h4><strong>Cloud Technologies</strong></h4>
+								    <p>Amazon Web Services, Google Cloud Platform, Microsoft Azure</p>
+								</li>
+
+							</ul>
+
+						</section>
+
+						<!-- Education -->
+						<section id="education" class="main special">
+							<header class="major">
+							  <h2>What I’ve Studied?</h2>
+							</header>
+							<ul class="statistics">
+							  <li class="style2">
+								<strong><i>Master of Science in Information Systems</i></strong>
+								<hr>
+								<h3>Northeastern University</h3>
+								<img src="images\NEU.png" alt="NEU Logo" style="width:200px;height:100px;">
+								<br>
+								Boston, MA
+								<br>
+								Sep'22 - Dec'24
+								<br><br>
+								<h2>Relevant Courses:</h2> Data Science Methods and Tools, Advanced Database Management Systems, Database Management, and Database Design.
+							  </li>
+							  <li class="style4">
+								<strong><i>Bachelor of Technology in Computer Science Engineering</i></strong>
+								<hr>
+								<h3>Vellore Institute of Technology</h3>
+								<img src="images\VIT.png" alt="VIT Logo" style="width:200px;height:100px;">
+								<br>
+								Vellore, India
+								<br>
+								May'15 – May'19
+								<br><br>
+								<h2>Relevant Courses:</h2> Data Science Methods and Tools, Advanced Database Management Systems, Database Management, and Database Design.<br><br><br>
+								<img src="images\VIT_Graduation_Photo.jpg" alt="Graduation Photo" style="width: 300px; height: auto; margin-top: 10px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); border: 2px solid #ccc;">
+							  </li>
+							</ul>
+						  </section>
+						  
+						  
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>What's my Motivation ?</h2>
+							<p>
+								My motivation for pursuing a career in data science stems from my early experiences with machine learning and data analysis. Working on projects that involved predictive modeling and data visualization revealed the profound impact that well-analyzed data can have on solving complex problems and driving decision-making. The ability to transform raw data into actionable insights and contribute to innovative solutions has continually fueled my passion for the field. I am driven by the challenge of leveraging data to uncover valuable patterns and support strategic initiatives.								<br>
+								
+							</p>
+						</section>
+						<section>
+							<h2>Connect with me</h2>
+							<ul class="icons">
+								<li><a href="mailto:inamdar.ca@northeastern.edu" target="_blank" class="icon solid fa-envelope alt"><span class="label">Email</span></a></li>
+								<li><a href="https://www.linkedin.com/in/chaitanya-inamdar98/" target="_blank" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/CHAITANYAI0/" target="_blank" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Chaitanya Inamdar. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

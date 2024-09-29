@@ -130,86 +130,112 @@
 								</div>
 							</section>
 
-						<!-- Projects -->
+						<!-- Buttons to filter projects -->
+
+
+<!-- Projects -->
+<section id="projects" class="main special">
+    <div class="spotlight">
+        <div class="content">
+            <header class="major">
+                <h2>Check out my Projects </h2>
+            </header>
+
+			<div id="filter-buttons">
+				<button class="filter-btn" onclick="filterProjects('all')">All</button>
+				<button class="filter-btn" onclick="filterProjects('data-analysis')">Data Analyis</button>
+				<button class="filter-btn" onclick="filterProjects('data-engineering')">Data Engineering</button>
+				<button class="filter-btn" onclick="filterProjects('ml')">ML</button>
+			</div>
+        </div>
+    </div>
+    <div id ="portfolio">
+        <div class="container"> 
+            <div class="work-list">
+                <div class="work" data-category="ml">
+                    <h3><strong>MLFLOW-DVC-AWS-Kidney Disease Classification</strong></h3>    
+                    <p  style="font-size: 18px;">End to end Deep learning project on Kidney Disease Classification with MLFLOW, DVC, and AWS.</p>
+                    <img src="images/kidney-MLflow-image.png" alt="MLFLOW-DVC-AWS project">
+                    <div class="layer">
+                        <a href="https://github.com/CHAITANYAI0/Kideny-Disease-Classification-Deep-Learning-Project-DS" target="_blank"><i class="icon brands fa-github"></i></a>
+                    </div>
+                </div>
+
+				<div class="work" data-category="ml">
+					<h3><strong>Image Caption Generation: CNN + LSTM vs ResNet + GRU</strong></h3>	
+					<p  style="font-size: 18px;">This project compares two approaches for image caption generation using deep learning models: CNN + LSTM and ResNet + GRU. The models were trained and evaluated on the Flicker 8K dataset to generate captions for images.
+					</p>
+					<img src="images\Image_Captioning.png" alt="Image Caption Generation: CNN + LSTM vs ResNet + GRU">
+					<div class="layer">
+						<a href="https://github.com/CHAITANYAI0/Image-Captioning-with-CNN-LSTM-and-ResNet-GRU-Flickr8k" target="_blank"><i class="icon brands fa-github"></i></a>
+					</div>
+				</div>
+
+				<div class="work" data-category="ml">
+					<h3><strong>Content Based Movie Recommendation System with Heroku Deployment</strong></h3>	
+					<p  style="font-size: 18px;">The Movie Recommender System is a web application built with Python and Streamlit that suggests movies based on user preferences using collaborative and content-based filtering techniques. It's ideal for those looking to build and deploy recommendation systems with a user-friendly interface.
+					</p>
+					<img src="images/Movie_Rec_sys.jpg" alt="Content Based Movie Recommendation System with Heroku Deployment">
+					<div class="layer">
+						<a href="https://github.com/CHAITANYAI0/Content-Based-Movie-Recommendation-System-with-Heroku-Deployment" target="_blank"><i class="icon brands fa-github"></i></a>
+					</div>
+				</div>
+
+			
+
+                <div class="work" data-category="data-engineering">
+                    <h3><strong>Uber ETL GCP-MAGE-SQL-Looker Data Engineering</strong></h3>    
+                    <p  style="font-size: 18px;">Data analytics on Uber data using various tools like GCP Storage, Python, Compute Instance, Mage Data Pipeline Tool, BigQuery, and Looker Studio.</p>
+                    <img src="images/architecture.jpg" alt="GCP-MAGE-SQL-Looker project">
+                    <div class="layer">
+                        <a href="https://github.com/CHAITANYAI0/Uber-ETL-Data-Engineering-Project" target="_blank"><i class="icon brands fa-github"></i></a>
+                    </div>
+                </div>
+
+				<div class="work"  data-category="data-engineering">
+					<h3><strong>App Store Relational Database Management System SQL</strong></h3>	
+					<p  style="font-size: 18px;">The App Store Management System streamlines app management across multiple platforms, allowing users to install, update, and review apps by genre. It also enables companies to launch apps and collect user feedback efficiently.
+					</p>
+					<img src="images\ER.png" alt="ERD Diagram" height="500px">
+					<div class="layer">
+						<a href="https://github.com/CHAITANYAI0/App-Store-Relational-Database-Management-System-SQL" target="_blank"><i class="icon brands fa-github"></i></a>
+					</div>
+				</div>
+
+                <div class="work" data-category="data-analysis">
+                    <h3><strong>Retail Sales Analysis Dashboard Tableau</strong></h3>    
+                    <p  style="font-size: 18px;">Interactive Sales and Customer Dashboards built with Tableau, offering insights into sales metrics, customer trends, and product performance.</p>
+                    <img src="images/Sales Dashboard.png" alt="Retail Sales Analysis Dashboard Tableau">
+                    <div class="layer">
+                        <a href="https://github.com/CHAITANYAI0/Retail-Sales-Analysis-Dashboard-TABLEAU" target="_blank"><i class="icon brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Add other projects similarly with appropriate data-category attributes -->
+            </div>
+        </div>
+    </div>     
+</section>
+<br>
+<br>
+<!-- Script to filter projects -->
+<script>
+function filterProjects(category) {
+    var projects = document.querySelectorAll('.work');
+    projects.forEach(function(project) {
+        if (category === 'all') {
+            project.style.display = 'block'; // Show all projects
+        } else if (project.getAttribute('data-category') === category) {
+            project.style.display = 'block'; // Show projects that match the category
+        } else {
+            project.style.display = 'none'; // Hide projects that don't match
+        }
+    });
+}
+</script>
+
 					
-							<section id="projects" class="main special">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Check out my Projects </h2>
-										</header>
-									</div>
-								</div>
-								<div id ="portfolio">
-									<div class="container"> 
-										<div class="work-list">
-											<div class="work">
-												<h3><strong>MLFLOW-DVC-AWS-Kideny Disease Classification</strong></h3>	
-												<p  style="font-size: 18px;">Lets implement end to end Deep learning project on Kidney Disease Classification with MLFLOW, DVC and AWS.
-												</p>
-												<img src="images\kidney-MLflow-image.png" alt="MLFLOW-DVC-AWS project">
-												<div class="layer">
-													<a href="https://github.com/CHAITANYAI0/Kideny-Disease-Classification-Deep-Learning-Project-DS" target="_blank"><i class="icon brands fa-github"></i></a>
-												</div>
-											</div>
-
-												<div class="work">
-												<h3><strong>Uber ETL GCP-MAGE-SQL-Looker Data Engineering</strong></h3>	
-												<p  style="font-size: 18px;">Lets implement data analytics on Uber data using various tools and technologies, including GCP Storage, Python, Compute Instance, Mage Data Pipeline Tool, BigQuery, and Looker Studio.
-												</p>
-												<img src="images\architecture.jpg" alt="GCP-MAGE-SQL-Looker project">
-												<div class="layer">
-													<a href="https://github.com/CHAITANYAI0/Uber-ETL-Data-Engineering-Project" target="_blank"><i class="icon brands fa-github"></i></a>
-												</div>
-											</div>
-											</div>
-											<div class="work-list">
-
-												<div class="work">
-												<h3><strong>Retail Sales Analysis Dashboard Tableau</strong></h3>	
-												<p  style="font-size: 18px;">This project features interactive Sales and Customer Dashboards built with Tableau, offering insights into sales metrics, customer trends, and product performance. Users can filter data by product category, subcategory, region, and year for deeper analysis.
-												</p>
-												<img src="images\Sales Dashboard.png" alt="Retail Sales Analysis Dashboard Tableau">
-												<div class="layer">
-													<a href="https://github.com/CHAITANYAI0/Retail-Sales-Analysis-Dashboard-TABLEAU" target="_blank"><i class="icon brands fa-github"></i></a>
-												</div>
-											</div>
-											<div class="work">
-												<h3><strong>App Store Relational Database Management System SQL</strong></h3>	
-												<p  style="font-size: 18px;">The App Store Management System streamlines app management across multiple platforms, allowing users to install, update, and review apps by genre. It also enables companies to launch apps and collect user feedback efficiently.
-												</p>
-												<img src="images\ER.png" alt="ERD Diagram" height="500px">
-												<div class="layer">
-													<a href="https://github.com/CHAITANYAI0/App-Store-Relational-Database-Management-System-SQL" target="_blank"><i class="icon brands fa-github"></i></a>
-												</div>
-											</div>
-										</div>
-										<div class="work-list">
-
-											<div class="work">
-											<h3><strong>Image Caption Generation: CNN + LSTM vs ResNet + GRU</strong></h3>	
-											<p  style="font-size: 18px;">This project compares two approaches for image caption generation using deep learning models: CNN + LSTM and ResNet + GRU. The models were trained and evaluated on the Flicker 8K dataset to generate captions for images.
-											</p>
-											<img src="images\Image_Captioning.png" alt="Image Caption Generation: CNN + LSTM vs ResNet + GRU">
-											<div class="layer">
-												<a href="https://github.com/CHAITANYAI0/Image-Captioning-with-CNN-LSTM-and-ResNet-GRU-Flickr8k" target="_blank"><i class="icon brands fa-github"></i></a>
-											</div>
-										</div>
-
-										<div class="work">
-											<h3><strong>Content Based Movie Recommendation System with Heroku Deployment</strong></h3>	
-											<p  style="font-size: 18px;">The Movie Recommender System is a web application built with Python and Streamlit that suggests movies based on user preferences using collaborative and content-based filtering techniques. It's ideal for those looking to build and deploy recommendation systems with a user-friendly interface.
-											</p>
-											<img src="images/Movie_Rec_sys.jpg" alt="Content Based Movie Recommendation System with Heroku Deployment">
-											<div class="layer">
-												<a href="https://github.com/CHAITANYAI0/Content-Based-Movie-Recommendation-System-with-Heroku-Deployment" target="_blank"><i class="icon brands fa-github"></i></a>
-											</div>
-										</div>
-
-										</div>
-									</div>
-								</div>		
-							</section>
+							
 							<br>
 							<br>
 						<!-- Experience -->
